@@ -10,7 +10,6 @@ function loadProducts() {
             const list = document.getElementById("productList");
             list.innerHTML = "";
 
-            // Check that the API returned an array
             if (Array.isArray(data.products)) {
                 data.products.forEach(product => {
                     const li = document.createElement("li");
